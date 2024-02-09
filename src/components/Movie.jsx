@@ -70,7 +70,7 @@ function Movie(){
             dataLength={movie.length}
             next={getmovie}
             hasMore={hasMore}
-            loader={<Loader/>}
+            loader={<h1 className="w-full h-full flex justify-center items-center">Loading..</h1>}
             >
             <Card data={movie} title='movie'/>
             </InfiniteScroll>

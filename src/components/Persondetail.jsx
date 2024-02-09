@@ -21,7 +21,7 @@ function Persondetail(){
      }
      },[id])
     return info ?(
-        <div className="w-screen px-[10%] h-[150vh] bg-[#1F1E24]">
+        <div className="w-screen px-[10%] h-[160vh] bg-[#1F1E24] pb-20s">
          {/* navigation part 1*/}
          <nav className="w-full h-[10vh] text-zinc-100 flex items-center gap-10 text-xl">
            <Link
@@ -61,7 +61,7 @@ function Persondetail(){
               <div className="w-[80%] ml-[5%]">
               <h1 className="text-zinc-300 font-black text-5xl my-3">{info.detail.name}</h1>
               <h1 className="text-zinc-300 font-bold text-xl mt-2">Biography</h1>
-              <p className="text-zinc-400   my-1">{info.detail.biography}</p>
+              <p className="text-zinc-400   my-1">{info.detail.biography.slice(0,800)}</p>
               <h1 className="text-zinc-300 font-bold text-xl my-3">Known For</h1>
               <Horizontalcard data={info.combinecredits.cast}/>
               <div className="w-full flex justify-between my-5">
