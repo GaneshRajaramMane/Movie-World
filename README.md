@@ -1,8 +1,13 @@
-# React + Vite
+Project: Movie Explorer Application (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Developed a full-featured movie discovery web application using React
+- Integrated external APIs (TMDB/OMDb) to fetch real-time movie data including titles, posters, IMDb ratings, genres, and release details
+- Implemented movie search, filtering, and detailed movie pages with complete information
+- Displayed cast and crew details including actors, roles, and profiles
+- Integrated YouTube trailers for each movie using embedded video player
+- Built responsive UI using Tailwind CSS for seamless experience across devices
+- Used React hooks (useState, useEffect) for state management and dynamic rendering
+- Created reusable components for scalability and maintainability
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GitHub: https://github.com/your-username/movie-app  
+Live: https://movie-app.vercel.app
