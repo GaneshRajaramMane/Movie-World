@@ -52,16 +52,14 @@ function Movie(){
 
     return movie ? (
         <>
-        <div className="w-screen h-screen text-white bg-[#1F1E24] ">
-            <div className="px-[5%] flex items-center w-full ">
+<div className="min-h-screen w-full text-white bg-[#1F1E24] ">
+            <div className="px-4 sm:px-[5%] flex flex-col md:flex-row md:items-center gap-4 w-full">
                <h1 className="text-2xl font-bold text-zinc-400">
                <i onClick={()=>navigate(-1)} className="hover:text-[#6556CD] ri-arrow-left-line"></i>
                Movie {category}</h1>
-               <div className="w-[80%] mx-auto flex items-center">
+               <div className="flex flex-col sm:flex-row sm:items-center gap-3 w-full">
                <TopNav/>
                <Dropdwon title={'Category'} option={['popular','top_rated','upcoming','now_playing']} func={(e)=>setcategory(e.target.value)}/>
-               
-              
                </div>
                
             </div>

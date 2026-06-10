@@ -2,8 +2,8 @@ import loader from '/Loder.gif'
 function Loader(){
     return(
         <>
-        <div className='flex justify-center items-center bg-black w-screen h-screen'>
-        <img className='w-[27%] h-[40%]' src={loader}></img>
+        <div className='flex justify-center items-center bg-black min-h-screen w-full p-6'>
+        <img className='w-full max-w-sm h-auto' src={loader} alt="Loading..." />
         </div>
        
         </>

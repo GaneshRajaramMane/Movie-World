@@ -22,7 +22,7 @@ function Moviedetails(){
     },[id])
 
     return info ?(
-        <div className="relative w-full h-[145vh] px-[10%]"
+        <div className="relative w-full min-h-screen px-4 sm:px-[5%] lg:px-[10%] py-10"
         style={{
             background:`linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5),rgba(0,0,0,.7)), url(https://image.tmdb.org/t/p/original/${info.detail.backdrop_path})`,
             backgroundSize:"cover",
@@ -44,9 +44,9 @@ function Moviedetails(){
           </nav>
 
           {/* poster and details part 2*/}
-          <div className="w-full flex mt-2  ">
-          <img className = "h-[60vh] shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] rounded-md" src={info.detail.poster_path || info.detail.backdrop_path || info.detail.profile_path?`https://image.tmdb.org/t/p/original/${info.detail.poster_path || info.detail.backdrop_path || info.detail.profile_path}`:"PNA.jpg"}></img>
-          <div className="content ml-[5%] ">
+          <div className="w-full flex flex-col lg:flex-row mt-2 gap-8">
+          <img className = "w-full lg:w-[35%] h-[55vh] md:h-[60vh] object-cover shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] rounded-md" src={info.detail.poster_path || info.detail.backdrop_path || info.detail.profile_path?`https://image.tmdb.org/t/p/original/${info.detail.poster_path || info.detail.backdrop_path || info.detail.profile_path}`:"PNA.jpg"} alt={info.detail.title || info.detail.name}></img>
+          <div className="content w-full lg:w-[60%] lg:ml-[5%] ">
          
           <h1 className="text-white  text-4xl font-black">{info.detail.title || info.detail.original_name || info.detail.original_title || info.detail.name  }
           <span className="text-xl font-bold text-zinc-300">({info.detail.release_date.split("-")[0]})</span>
@@ -74,7 +74,7 @@ function Moviedetails(){
           </div>
            
            {/* platform 3*/}
-          <div className=" flex flex-col gap-y-5 mt-5 w-[80%]">
+          <div className="flex flex-col gap-y-5 mt-5 w-full">
            {info.watchproviders &&
             info.watchproviders.flatrate &&(
             <div className="flex gap-5 text-zinc-100 items-center">

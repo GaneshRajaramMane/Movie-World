@@ -45,13 +45,13 @@ function Home(){
     return wallpaper&&trendingdata ?(
         
         <>
-        <div className="flex w-screen h-screen">
+        <div className="flex flex-col lg:flex-row min-h-screen w-full">
         <Sidenav/>
-        <div className="w-[100%] overflow-x-hidden oveflow-auto">
+        <div className="w-full overflow-x-hidden overflow-auto">
             <TopNav/>
             <Header data={wallpaper}/>
 
-            <div className="px-10  flex justify-between my-5">
+            <div className="px-4 sm:px-10 flex flex-col sm:flex-row sm:items-center justify-between my-5 gap-4">
                <h1 className="text-zinc-400 text-3xl font-semibold">Trending</h1>
                <Dropdwon
                 title={"Filter"}

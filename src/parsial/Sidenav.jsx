@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Sidenav(){
     return(
-        <div className="w-[20%] border-r-2 border-zinc-200 text-white font-bold p-10">
+        <div className="w-full lg:w-[20%] border-b lg:border-b-0 lg:border-r-2 border-zinc-200 text-white font-bold p-6 lg:p-10">
          <h1 className="text-2xl w-full flex gap-3">
          <i className="  text-[#6556CD] ri-tv-fill"></i>
           Movie World

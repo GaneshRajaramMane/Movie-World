@@ -9,9 +9,9 @@ function Horizontalcard({data}){
     
         
        
-     <div className="flex overflow-hidden overflow-x-auto h-[35vh] w-[100%] pb-3">
+     <div className="flex overflow-x-auto overflow-hidden h-auto w-full pb-3 gap-4">
         {data.length >0 ? data.map((d,i)=>(
-        <Link to={`/${d.media_type}/details/${d.id}`}  key={i} className="bg-zinc-900 p-3  rounded-md text-white flex-shrink-0 w-[15%] h-[33vh] mr-5 overflow-y-auto ">
+        <Link to={`/${d.media_type}/details/${d.id}`}  key={i} className="bg-zinc-900 p-3 rounded-md text-white flex-shrink-0 w-[85vw] sm:w-[45vw] md:w-[30vw] lg:w-[15vw] h-[45vh] sm:h-[40vh] lg:h-[33vh] mr-5 overflow-y-auto ">
             <img className="w-full h-[50%] object-cover" src={d.backdrop_path||d.profile_path ? `https://image.tmdb.org/t/p/original/${d.backdrop_path||d.profile_path}` : noimage}></img>
          
             <h1 className="text-white text-lg font-semibold  mb-2 ">

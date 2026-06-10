@@ -21,7 +21,7 @@ function Persondetail(){
      }
      },[id])
     return info ?(
-        <div className="w-screen px-[10%] h-[160vh] bg-[#1F1E24] pb-20s">
+        <div className="w-full px-4 sm:px-[5%] lg:px-[10%] bg-[#1F1E24] pb-20">
          {/* navigation part 1*/}
          <nav className="w-full h-[10vh] text-zinc-100 flex items-center gap-10 text-xl">
            <Link
@@ -30,9 +30,9 @@ function Persondetail(){
             >
           </Link>  
          </nav>
-         <div className="w-full flex ">
+         <div className="w-full flex flex-col lg:flex-row gap-8">
           {/*part 2 poster and detais */}
-          <div className="w-[20%] ">
+          <div className="w-full lg:w-[30%] ">
           <img className = "h-[35vh] w-full shadow-[8px_17px_38px_2px_rgba(0,0,0,.5)] rounded-md" src={ info.detail.profile_path?`https://image.tmdb.org/t/p/original/${info.detail.profile_path}`:"PNA.jpg"}></img>
           <hr className="mt-2 border-none h-[3px] bg-zinc-500"></hr>
           {/*social media link */}
@@ -58,7 +58,7 @@ function Persondetail(){
            <h1 className="text-zinc-400 font-semibold text-sm ">{info.detail.also_known_as.join(",") }</h1>
           </div>
            {/*part 3 right detail and information */}
-              <div className="w-[80%] ml-[5%]">
+              <div className="w-full lg:w-[65%] lg:ml-[5%]">
               <h1 className="text-zinc-300 font-black text-5xl my-3">{info.detail.name}</h1>
               <h1 className="text-zinc-300 font-bold text-xl mt-2">Biography</h1>
               <p className="text-zinc-400   my-1">{info.detail.biography.slice(0,800)}</p>
